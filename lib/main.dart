@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -62,12 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _decrementCounter() {
-    if(_counter > 0){
-      setState(() {
-      _counter--;
-      });
-    }
-    // do nothing if _counter <= 0
+    setState(() {
+    _counter--;
+    });
   }
 
 
@@ -127,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <
                   Widget>[
             FloatingActionButton(
-                onPressed:_decrementCounter,
+                onPressed: (_counter > 1) ? _decrementCounter : null,
                 tooltip: 'Decrement',
                 child: const Icon(Icons.remove)),
             FloatingActionButton(
