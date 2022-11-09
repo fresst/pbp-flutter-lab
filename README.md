@@ -1,16 +1,21 @@
 # counter_7
+## Jawaban Pertanyaan
+1. - *Stateless Widget* adalah 
+   - *Stateful Widget* adalah 
 
-A new Flutter project.
+2. Widget yang dipakai dalam proyek kali ini adalah sebagai berikut:
+   - Center: widget untuk memposisikan child-nya di tengah
+   - Column: widget untuk menampilkan child-nya pada suatu *array* vertikal
+   - MainAxisAlignment: widget untuk mengatur posisi child-nya dalam flex layout
+   - Padding: widget untuk menambahkan *padding* pada child-nya
+   - Row: widget untuk menampilkan child-nya pada suatu *array* horizontal
+   - Visibility: widget untuk menampilkan atau menunjukkan child-nya
+   - FloatingActionButton: widget button yang *float* di atas widget-widget lain
+   - Text: widget untuk menampilkan sebuah *string* teks dengan satu `style` tertentu
+   - Icon: widget untuk menampilkan icon yang sudah didefinisikan berdasarkan library *Icons*
 
-## Getting Started
+3. `setState()` digunakan untuk mengubah (lebih tepatnya *rebuild*) suatu widget beserta *descendants*-nya. Pada program ini, `setState()` mengubah variabel `_counter` ketika fungsi `_incrementCounter` dan `_decrementCounter` dipanggil.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+4. - `final`: variabel harus diketahui saat runtime. 
+   - `const`: variabel harus diketahui saat compile time.<br>
+   Kedua `final` dan `const` tidak dapat diubah-ubah lagi setelah diinisialisasi.
