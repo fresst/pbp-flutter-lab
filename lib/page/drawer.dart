@@ -1,6 +1,6 @@
 import 'package:counter_7/main.dart';
-import 'package:counter_7/tambah_budget.dart';
-import 'package:counter_7/data_budget.dart';
+import 'package:counter_7/page/tambah_budget.dart';
+import 'package:counter_7/page/data_budget.dart';
 import 'package:flutter/material.dart';
 
 class SeparateDrawer extends StatefulWidget {
