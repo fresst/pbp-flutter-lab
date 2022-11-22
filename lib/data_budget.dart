@@ -1,6 +1,4 @@
-import 'dart:developer';
-import 'package:counter_7/main.dart';
-import 'package:counter_7/tambah_budget.dart';
+import 'package:counter_7/drawer.dart';
 import 'package:flutter/material.dart';
 
 class DataBudgetPage extends StatefulWidget {
@@ -19,45 +17,7 @@ class _DataBudgetPageState extends State<DataBudgetPage> {
         title: Text('Form'),
       ),
       //DRAWER
-      drawer: Drawer(
-        child: Column(
-          children: [
-            // MENAMBAHKAN CLICKABLE MENU
-            ListTile(
-              title: const Text('counter_7'),
-              onTap: () {
-                // ROUTE MENU KE HALAMAN UTAMA ("counter_7")
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const MyHomePage()),
-                );
-              },
-            ),
-            ListTile(
-              title: const Text('Tambah Budget'),
-              onTap: () {
-                // ROUTE MENU KE "Tambah Budget"
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const TambahBudgetPage()),
-                );
-              },
-            ),
-            ListTile(
-              title: const Text('Data Budget'),
-              onTap: () {
-                // ROUTE MENU KE "Data Budget"
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => DataBudgetPage()),
-                );
-              },
-            ),
-          ],
-        ),
-      ),
+      drawer: SeparateDrawer(dataBudget: widget.budgetItem),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
