@@ -1,6 +1,7 @@
 import 'package:counter_7/main.dart';
 import 'package:counter_7/page/tambah_budget.dart';
 import 'package:counter_7/page/data_budget.dart';
+import 'package:counter_7/page/mywatchlist_page.dart';
 import 'package:flutter/material.dart';
 
 class SeparateDrawer extends StatefulWidget {
@@ -50,6 +51,16 @@ class _SeparateDrawerState extends State<SeparateDrawer> {
                     budgetItem: widget.dataBudget,
                   ),
                 ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+              // ROUTE MENU KE "My Watch List Page"
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const MyWatchListPage()),
               );
             },
           ),
