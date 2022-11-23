@@ -74,6 +74,6 @@
    - Membuat 1 file model, `mywatchlist.dart`, dan 2 file page untuk menampilkan model, `mywatchlist_page` dan `watchlist_detail_page.dart`
    - Menambahkan dependensi HTTP dalam project
    - Membuat utility untuk fetch data seperti pada jawaban nomor 3 di file `mywatchlist_page`
-   - Menampilkan keseluruhan data yang di-*fetch* dari URL menggunakan `FutureBuilder`
+   - Menampilkan keseluruhan data yang di-*fetch* dari URL menggunakan `FutureBuilder` di page `mywatchlist_page`
    - Mengirim data `mywatchlist` yang diklik ke page `watchlist_detail_page.dart` untuk diperlihatkan detail filmnya
-   -
+   - Menampilkan detail salah satu objek `mywatchlist` pada page tersebut
